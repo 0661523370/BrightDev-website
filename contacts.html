@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bright Manzini | Contact</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: radial-gradient(circle at top, #1a1a1a, #000000);
+      color: #eee;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff0000, #111);
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+      text-shadow: 0px 0px 10px rgba(255,0,0,0.8);
+    }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { margin-top: 10px; font-size: 1.2em; opacity: 0.9; }
+
+    nav {
+      background: #111;
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 4px 15px rgba(255,0,0,0.3);
+    }
+    nav ul { list-style: none; margin: 0; padding: 0; }
+    nav ul li { display: inline-block; margin: 0 20px; }
+    nav ul li a { color: #ff5555; text-decoration: none; font-weight: bold; font-size: 1.1em; transition: color 0.3s ease; }
+    nav ul li a:hover { color: #fff; }
+
+    section {
+      padding: 60px 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      background: #222;
+      border-radius: 12px;
+      box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.4);
+    }
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #ff4444;
+      border-left: 5px solid #ff4444;
+      padding-left: 12px;
+    }
+
+    /* Contact Info */
+    #contact-info ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1em;
+    }
+    #contact-info ul li {
+      margin: 15px 0;
+      transition: transform 0.3s ease;
+    }
+    #contact-info ul li:hover { transform: translateX(10px); }
+    #contact-info ul li a { color: #ff5555; text-decoration: none; font-weight: bold; }
+    #contact-info ul li a:hover { color: #fff; text-shadow: 0 0 10px #ff4444; }
+
+    /* Contact Form */
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    form input, form textarea {
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      font-size: 1em;
+      background: #333;
+      color: #fff;
+      transition: 0.3s;
+    }
+    form input:focus, form textarea:focus { background: #444; }
+    form button {
+      padding: 15px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #ff0000, #ff5555);
+      color: #fff;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    form button:hover {
+      background: linear-gradient(135deg, #ff5555, #ff0000);
+      transform: scale(1.05);
+      box-shadow: 0px 0px 15px rgba(255,0,0,0.6);
+    }
+
+    footer {
+      background: #111;
+      color: #999;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 40px;
+      font-size: 0.9em;
+      border-top: 1px solid #333;
+    }
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 80px 20px;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(#ff0000, #ff5500, #ff0000, #550000);
+  animation: rotateBG 10s linear infinite;
+  z-index: 0;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+
+.glow-text {
+  position: relative;
+  font-size: 3em;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff0000, #ff7777, #ff0000);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientText 3s ease-in-out infinite;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff5555, 0 0 30px #ff0000;
+  z-index: 1;
+}
+
+.subtitle {
+  position: relative;
+  font-size: 1.2em;
+  color: #fff;
+  text-shadow: 0 0 10px #ff0000;
+  margin-top: 10px;
+  z-index: 1;
+}
+
+/* Animations */
+@keyframes gradientText {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes rotateBG {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+</head>
+<body>
+
+     <header>
+  <h1 class="glow-text">Bright Manzini</h1>
+  <p class="subtitle">Mechanical Engineer | CAD Specialist</p>
+</header>
+
+  <nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+      <li><a href="About.html">About</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="project.html">Projects</a></li>
+      <li><a href="contacts.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="contact-info">
+    <h2>Contact Information</h2>
+    <ul>
+      <li>📞 <strong>Phone:</strong> <a href="tel:+27661523370">+27 66 152 3370</a></li>
+      <li>📧 <strong>Email:</strong> <a href="mailto:brightmanzini06@example.com">brightmanzini06@example.com</a></li>
+      <li>💼 <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/brightmanzini" target="_blank">linkedin.com/in/brightmanzini</a></li>
+      <li>🐱 <strong>GitHub:</strong> <a href="https://github.com/brightmanzini" target="_blank">github.com/brightmanzini</a></li>
+    </ul>
+  </section>
+
+  <section id="contact-form">
+    <h2>Send Me a Message</h2>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bright Manzini. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
